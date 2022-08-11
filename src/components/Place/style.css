@@ -1,0 +1,12 @@
+.place-image img{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 120%;
+}
+
+.place-image{
+    max-width: 770px;
+    max-height: 635px;
+    overflow: hidden;
+}
