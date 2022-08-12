@@ -28,7 +28,6 @@
 }
 
 .Aside p.description{
-    max-width: 440px;
     margin-bottom: 30px;
 }
 .Aside .button-link{
@@ -99,11 +98,13 @@
         font-size: 1.06rem;
         line-height: 1.5rem;
         margin-bottom: 40px;
+        max-width: 440px;
     }
 
     .Aside h1{
         position: relative;
-        left: -250px;
+        left: -350px;
+        font-size: 8.8rem;
         margin-bottom: 35px;
     }
     .Aside .button-link{

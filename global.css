@@ -15,9 +15,13 @@ img{
 
 body{
     position: relative;
-    /* background-color: rgb(255, 123, 123); */
 }
 
 p{
     line-height: 1.43rem;
+}
+
+input{
+    font-family: "Roboto";
+    letter-spacing: 1px;
 }

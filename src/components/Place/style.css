@@ -3,7 +3,7 @@
     display: block;
     /* min-height: 100%; */
     width: 120%;
-    max-height: 800px;
+    /* max-height: 800px; */
 }
 
 .place-image{
@@ -13,7 +13,7 @@
 
 @media screen and (min-width: 1100px) {
     .place-image img{
-        width: 168%;
+        width: 100vw;
     }
     .place-image{
         display: inline-block;
@@ -21,5 +21,10 @@
         top: 0;
         height: 100vh;
         max-width: 60%;
+    }
+}  
+@media screen and (min-width: 1600px) {
+    .place-image img{
+        width: 80vw;
     }
 }  
