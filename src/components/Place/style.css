@@ -1,12 +1,25 @@
 .place-image img{
     position: relative;
     display: block;
-    height: 100%;
+    /* min-height: 100%; */
     width: 120%;
+    max-height: 800px;
 }
 
 .place-image{
-    max-width: 770px;
-    max-height: 635px;
+    width: 100%;
     overflow: hidden;
 }
+
+@media screen and (min-width: 1100px) {
+    .place-image img{
+        width: 168%;
+    }
+    .place-image{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        max-width: 60%;
+    }
+}  
