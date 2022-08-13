@@ -25,3 +25,17 @@ input{
     font-family: "Roboto";
     letter-spacing: 1px;
 }
+
+@media screen and (min-width: 1700px) {
+    .root{
+        position: absolute;
+        display: block;
+        width: 100vw;
+        height: 100vh;
+    }
+    .root .App{
+        position: relative;
+        display: block;
+        max-width: 1200px;
+    }
+}

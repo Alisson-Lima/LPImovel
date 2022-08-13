@@ -96,7 +96,7 @@
 @media screen and (min-width: 1100px) {
     .Aside{
         position: absolute;
-        max-width: 40vw;
+        max-width: 40%;
         top: 70px;
         right: 0;
         border-top-left-radius: 0;
