@@ -1,3 +1,12 @@
+@keyframes asideTransition {
+    from{
+        transform: translateY(30px);
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .Aside{
     display: block;
     position: relative;
@@ -7,6 +16,9 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     top: -30px;
+    opacity: 0;
+    animation: asideTransition .5s normal;
+    animation-fill-mode: forwards;
 }
 
 .Aside h1{
