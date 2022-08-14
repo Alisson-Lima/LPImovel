@@ -1,6 +1,14 @@
-@keyframes asideTransition {
+@keyframes asideTransitionMobile {
     from{
         transform: translateY(30px);
+    }to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes asideTransition {
+    from{
+        transform: translateX(30px);
     }to{
         transform: translateY(0);
         opacity: 1;
@@ -17,7 +25,7 @@
     border-top-right-radius: 30px;
     top: -30px;
     opacity: 0;
-    animation: asideTransition .5s normal;
+    animation: asideTransitionMobile .5s normal;
     animation-fill-mode: forwards;
 }
 
@@ -113,6 +121,8 @@
         right: 0;
         border-top-left-radius: 0;
         border-top-right-radius: 0;
+        animation: asideTransition .5s normal;
+        animation-fill-mode: forwards;
     }
 
     .Aside .small-info{
