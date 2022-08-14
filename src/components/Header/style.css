@@ -1,3 +1,10 @@
+@keyframes opacityTransition {
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 header{
     display: block;
     position: relative;
@@ -8,6 +15,10 @@ header{
     left: 0;
     z-index: 5;
     background-color: white;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: opacityTransition .5s normal;
+    animation-fill-mode: forwards;
 }
 header .search-container{
     position: relative;
