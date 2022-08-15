@@ -79,8 +79,7 @@
     margin-left: 10px;
     margin-bottom: 1.5px;
 }
-
-.Aside .button-link:hover::after{
+.Aside .button-link::after{
     content: "";
     width: 500px;
     height: 150px;
@@ -88,11 +87,12 @@
     position: absolute;
     right: -15px;
     bottom: 15px;
-    background-color: rgba(255, 255, 255, 0.025);
+    background-color: transparent;
     border-radius: 100%;
-    opacity: 0;
-    animation: buttonHoverOpacity .5s normal;
-    animation-fill-mode: forwards;
+    transition: .5s;
+}
+.Aside .button-link:hover::after{
+    background-color: rgba(255, 255, 255, 0.025);
 }
 
 
